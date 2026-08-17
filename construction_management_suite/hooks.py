@@ -39,7 +39,7 @@ fixtures = [
         "Progress Billing",
         "Subcontractor Management",
         "Material Planning",
-    ]]},
+    ]]]},
 ]
 
 # Document Events
