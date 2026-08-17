@@ -1,0 +1,43 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "Construction Management Suite",
+    "title": "Construction Management Suite",
+    "label": "Construction Management Suite",
+    "icon": "building",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\":\"card\",\"data\":{\"card_name\":\"BOQ Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Estimation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Project Costing\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Site Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Progress Billing\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Subcontractor Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Material Planning\",\"col\":4}}]",
+    "links": [
+      {"type": "Card Break", "label": "BOQ Management",             "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "BOQ",               "link_to": "BOQ",               "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "BOQ Template",      "link_to": "BOQ Template",      "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Estimation",                  "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Rate Analysis",     "link_to": "Rate Analysis",     "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cost Estimation",   "link_to": "Cost Estimation",   "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Project Costing",             "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Project Budget",    "link_to": "Project Budget",    "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cost Code",         "link_to": "Cost Code",         "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Site Management",             "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Daily Site Report", "link_to": "Daily Site Report", "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Site Material Request", "link_to": "Site Material Request", "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Progress Billing",            "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Interim Payment Certificate", "link_to": "Interim Payment Certificate", "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Retention Release", "link_to": "Retention Release", "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Subcontractor Management",    "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Subcontract Agreement",              "link_to": "Subcontract Agreement",              "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Subcontractor Payment Certificate",  "link_to": "Subcontractor Payment Certificate",  "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Material Planning",           "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Material Forecast",         "link_to": "Material Forecast",         "link_type": "DocType", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Site Transfer",             "link_to": "Site Transfer",             "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Material Consumption Entry","link_to": "Material Consumption Entry", "link_type": "DocType", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "BOQ Summary (Report)",     "link_to": "BOQ Summary",               "link_type": "Report",   "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+    ]
+  }
+]

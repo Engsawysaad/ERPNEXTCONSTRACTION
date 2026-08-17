@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "autoname": "field:template_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": ["template_name", "project_type", "description", "column_break_1", "currency", "is_active", "items"],
+ "fields": [
+  {"fieldname": "template_name", "fieldtype": "Data", "label": "Template Name", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "project_type", "fieldtype": "Select", "label": "Project Type", "options": "\nBuilding Construction\nCivil Works\nMEP\nInfrastructure\nInterior Fit-Out\nRoad Works", "in_list_view": 1},
+  {"fieldname": "description", "fieldtype": "Text", "label": "Description"},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "currency", "fieldtype": "Link", "label": "Currency", "options": "Currency"},
+  {"fieldname": "is_active", "fieldtype": "Check", "label": "Is Active", "default": "1"},
+  {"fieldname": "items", "fieldtype": "Table", "label": "Template Items", "options": "BOQ Template Item"}
+ ],
+ "links": [],
+ "module": "BOQ Management",
+ "name": "BOQ Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "CMS Admin", "read": 1, "write": 1, "create": 1, "delete": 1},
+  {"role": "CMS Quantity Surveyor", "read": 1, "write": 1, "create": 1},
+  {"role": "CMS Viewer", "read": 1}
+ ],
+ "title_field": "template_name",
+ "track_changes": 1
+}

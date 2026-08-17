@@ -1,0 +1,162 @@
+app_name = "construction_management_suite"
+app_title = "Construction Management Suite"
+app_publisher = "Your Company"
+app_description = "Production-ready Construction Management Suite for ERPNext/Frappe"
+app_email = "admin@construction.com"
+app_license = "MIT"
+app_version = "2.0.0"
+
+# Required apps
+required_apps = ["frappe", "erpnext"]
+
+# Includes in <head>
+app_include_css = "/assets/construction_management_suite/css/cms.css"
+app_include_js = "/assets/construction_management_suite/js/cms.js"
+
+# DocType permissions and custom fields
+fixtures = [
+    {"dt": "Custom Field", "filters": [["fieldname", "like", "cms_%"]]},
+    {"dt": "Property Setter", "filters": [["doc_type", "in", [
+        "BOQ", "Cost Estimation", "Project Budget", "Daily Site Report",
+        "Interim Payment Certificate", "Subcontract Agreement",
+        "Material Forecast", "Site Transfer",
+    ]]]},
+    {"dt": "Role", "filters": [["role_name", "in", [
+        "CMS Admin",
+        "CMS Project Manager",
+        "CMS Site Engineer",
+        "CMS Quantity Surveyor",
+        "CMS Subcontractor",
+        "CMS Billing Officer",
+        "CMS Viewer",
+    ]]]},
+    {"dt": "Workspace", "filters": [["name", "=", "Construction Management Suite"]]},
+]
+
+# Document Events
+doc_events = {
+    # BOQ auto-versioning on amendment
+    "BOQ": {
+        "on_submit": "construction_management_suite.boq_management.doctype.boq.boq.on_submit",
+        "on_cancel": "construction_management_suite.boq_management.doctype.boq.boq.on_cancel",
+        "on_update_after_submit": "construction_management_suite.boq_management.doctype.boq.boq.on_update_after_submit",
+    },
+    # Sync Cost Estimation approval to Project Budget
+    "Cost Estimation": {
+        "on_submit": "construction_management_suite.estimation.doctype.cost_estimation.cost_estimation.on_submit",
+    },
+    # When an IPC is submitted, create Sales Invoice draft
+    "Interim Payment Certificate": {
+        "on_submit": "construction_management_suite.progress_billing.doctype.interim_payment_certificate.interim_payment_certificate.on_submit",
+        "on_cancel": "construction_management_suite.progress_billing.doctype.interim_payment_certificate.interim_payment_certificate.on_cancel",
+    },
+    # Subcontractor Payment Certificate triggers Purchase Invoice
+    "Subcontractor Payment Certificate": {
+        "on_submit": "construction_management_suite.subcontractor_management.doctype.subcontractor_payment_certificate.subcontractor_payment_certificate.on_submit",
+    },
+    # Daily Site Report triggers actual cost entries
+    "Daily Site Report": {
+        "on_submit": "construction_management_suite.site_management.doctype.daily_site_report.daily_site_report.on_submit",
+    },
+    # Material Consumption Entry triggers Stock Entry
+    "Material Consumption Entry": {
+        "on_submit": "construction_management_suite.material_planning.doctype.material_consumption_entry.material_consumption_entry.on_submit",
+    },
+    # Site Transfer triggers ERPNext Stock Entry
+    "Site Transfer": {
+        "on_submit": "construction_management_suite.material_planning.doctype.site_transfer.site_transfer.on_submit",
+    },
+    # Link ERPNext Project to CMS Project Budget on save
+    "Project": {
+        "after_insert": "construction_management_suite.project_costing.utils.sync_erpnext_project",
+        "on_update": "construction_management_suite.project_costing.utils.sync_erpnext_project",
+    },
+}
+
+# Scheduled Tasks
+scheduler_events = {
+    "daily": [
+        # Auto-calculate project cost variance
+        "construction_management_suite.project_costing.utils.calculate_daily_variance",
+        # Alert on retention release eligibility
+        "construction_management_suite.progress_billing.utils.check_retention_release",
+        # Daily material forecast recompute
+        "construction_management_suite.material_planning.utils.recompute_forecasts",
+    ],
+    "weekly": [
+        # Cash flow projection refresh
+        "construction_management_suite.project_costing.utils.refresh_cash_flow_projections",
+        # Subcontractor aging report
+        "construction_management_suite.subcontractor_management.utils.generate_aging_report",
+    ],
+    "monthly": [
+        # WIP journal entry creation
+        "construction_management_suite.project_costing.utils.create_monthly_wip_entries",
+    ],
+}
+
+# Override Whitelisted Methods (used by API)
+override_whitelisted_methods = {}
+
+# Jinja environment extensions for print formats
+jinja = {
+    "methods": [
+        "construction_management_suite.utils.helpers.format_currency_arabic",
+        "construction_management_suite.utils.helpers.number_to_words_arabic",
+        "construction_management_suite.utils.helpers.get_project_summary",
+    ],
+    "filters": [
+        "construction_management_suite.utils.helpers.arabic_number",
+    ],
+}
+
+# Regional overrides (loaded by localization modules)
+regional_overrides = {
+    "Saudi Arabia": {
+        "construction_management_suite.localization.ksa.vat": "construction_management_suite.localization.ksa.overrides.get_vat_settings",
+    },
+    "United Arab Emirates": {
+        "construction_management_suite.localization.uae.vat": "construction_management_suite.localization.uae.overrides.get_vat_settings",
+    },
+}
+
+# On app install
+after_install = "construction_management_suite.setup.after_install"
+after_migrate = "construction_management_suite.setup.after_migrate"
+before_uninstall = "construction_management_suite.setup.before_uninstall"
+
+# Portal menu items
+portal_menu_items = []
+
+# Notification config
+notification_config = "construction_management_suite.utils.notifications.get_notification_config"
+
+# Email digests
+email_brand_image = "construction_management_suite/images/cms_logo.png"
+
+# Website context
+website_context = {}
+
+# Override standard page
+page_js = {}
+
+# Permission query conditions — row-level security by company
+permission_query_conditions = {
+    "BOQ": "construction_management_suite.utils.permissions.get_company_filter",
+    "Cost Estimation": "construction_management_suite.utils.permissions.get_company_filter",
+    "Interim Payment Certificate": "construction_management_suite.utils.permissions.get_company_filter",
+    "Daily Site Report": "construction_management_suite.utils.permissions.get_company_filter",
+}
+
+has_permission = {
+    "BOQ": "construction_management_suite.utils.permissions.has_permission",
+    "Interim Payment Certificate": "construction_management_suite.utils.permissions.has_permission",
+}
+
+# Standard controllers override
+override_doctype_class = {}
+
+# Custom dashboard charts
+dashboards = {
+    "Project Overview": "construction_management_suite.config.dashboards.project_overview",
+}

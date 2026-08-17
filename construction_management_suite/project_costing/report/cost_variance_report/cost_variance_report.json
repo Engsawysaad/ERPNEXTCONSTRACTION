@@ -1,0 +1,8 @@
+{
+ "add_total_row": 1, "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Report", "is_standard": "Yes",
+ "module": "Project Costing", "name": "Project Cost Variance",
+ "owner": "Administrator", "ref_doctype": "Project Budget",
+ "report_name": "Project Cost Variance", "report_type": "Script Report",
+ "roles": [{"role": "CMS Admin"}, {"role": "CMS Project Manager"}, {"role": "CMS Quantity Surveyor"}]
+}

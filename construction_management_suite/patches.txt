@@ -1,0 +1,2 @@
+# Patches are listed in the format: app.module.patch_module.patch_function
+# Example: construction_management_suite.patches.v1_0.migrate_boq_data
