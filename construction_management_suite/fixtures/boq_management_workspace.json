@@ -1,0 +1,23 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "BOQ Management",
+    "title": "BOQ Management",
+    "label": "BOQ Management",
+    "module": "BOQ Management",
+    "icon": "octicon octicon-list-ordered",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Bill of Quantities\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"BOQ Documents\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Templates & Reports\",\"col\":4}}]",
+    "links": [
+      {"type": "Card Break", "label": "BOQ Documents", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "BOQ", "link_to": "BOQ", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "BOQ Item", "link_to": "BOQ Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Templates & Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "BOQ Template", "link_to": "BOQ Template", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "BOQ Template Item", "link_to": "BOQ Template Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "BOQ Summary", "link_to": "BOQ Summary", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+    ]
+  }
+]

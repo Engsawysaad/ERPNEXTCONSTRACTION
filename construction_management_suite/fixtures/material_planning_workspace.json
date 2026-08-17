@@ -1,0 +1,24 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "Material Planning",
+    "title": "Material Planning",
+    "label": "Material Planning",
+    "module": "Material Planning",
+    "icon": "octicon octicon-package",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Procurement & Site Transfers\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Forecasting\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Transfers & Consumption\",\"col\":4}}]",
+    "links": [
+      {"type": "Card Break", "label": "Forecasting", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Material Forecast", "link_to": "Material Forecast", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Material Forecast Item", "link_to": "Material Forecast Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Transfers & Consumption", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Site Transfer", "link_to": "Site Transfer", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Site Transfer Item", "link_to": "Site Transfer Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Material Consumption Entry", "link_to": "Material Consumption Entry", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Material Consumption Item", "link_to": "Material Consumption Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+    ]
+  }
+]

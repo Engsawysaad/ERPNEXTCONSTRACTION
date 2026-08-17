@@ -1,0 +1,29 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "Project Costing",
+    "title": "Project Costing",
+    "label": "Project Costing",
+    "module": "Project Costing",
+    "icon": "octicon octicon-dashboard",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Budget Monitoring & Cost Control\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Budget & Cost Codes\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"WIP & Cash Flow\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+    "links": [
+      {"type": "Card Break", "label": "Budget & Cost Codes", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Project Budget", "link_to": "Project Budget", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Project Budget Item", "link_to": "Project Budget Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cost Code", "link_to": "Cost Code", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cost Variance Ledger", "link_to": "Cost Variance Ledger", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "WIP & Cash Flow", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "WIP Entry", "link_to": "WIP Entry", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Project Cash Flow Item", "link_to": "Project Cash Flow Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Cost Variance Report", "link_to": "Cost Variance Report", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cash Flow Projection", "link_to": "Cash Flow Projection", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Profitability Analysis", "link_to": "Profitability Analysis", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+    ]
+  }
+]

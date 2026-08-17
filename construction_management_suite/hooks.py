@@ -30,7 +30,16 @@ fixtures = [
         "CMS Billing Officer",
         "CMS Viewer",
     ]]]},
-    {"dt": "Workspace", "filters": [["name", "=", "Construction Management Suite"]]},
+    {"dt": "Workspace", "filters": [["name", "in", [
+        "Construction Management Suite",
+        "BOQ Management",
+        "Estimation",
+        "Project Costing",
+        "Site Management",
+        "Progress Billing",
+        "Subcontractor Management",
+        "Material Planning",
+    ]]},
 ]
 
 # Document Events

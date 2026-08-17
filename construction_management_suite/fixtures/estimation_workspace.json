@@ -1,0 +1,23 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "Estimation",
+    "title": "Estimation",
+    "label": "Estimation",
+    "module": "Estimation",
+    "icon": "octicon octicon-graph",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Rate Analysis & Cost Estimation\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Rate Analysis\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Cost Estimation\",\"col\":4}}]",
+    "links": [
+      {"type": "Card Break", "label": "Rate Analysis", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Rate Analysis", "link_to": "Rate Analysis", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Rate Analysis Resource", "link_to": "Rate Analysis Resource", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Resource Template", "link_to": "Resource Template", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
+
+      {"type": "Card Break", "label": "Cost Estimation", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
+      {"type": "Link", "label": "Cost Estimation", "link_to": "Cost Estimation", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
+      {"type": "Link", "label": "Cost Estimation Item", "link_to": "Cost Estimation Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+    ]
+  }
+]
