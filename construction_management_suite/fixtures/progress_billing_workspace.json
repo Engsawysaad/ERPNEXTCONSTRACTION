@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Progress Billing",
     "title": "Progress Billing",
     "label": "Progress Billing",

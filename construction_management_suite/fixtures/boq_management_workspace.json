@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "BOQ Management",
     "title": "BOQ Management",
     "label": "BOQ Management",

@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Estimation",
     "title": "Estimation",
     "label": "Estimation",

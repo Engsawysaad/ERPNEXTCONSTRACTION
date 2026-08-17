@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Project Costing",
     "title": "Project Costing",
     "label": "Project Costing",

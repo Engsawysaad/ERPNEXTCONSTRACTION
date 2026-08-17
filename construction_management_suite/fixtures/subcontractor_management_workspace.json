@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Subcontractor Management",
     "title": "Subcontractor Management",
     "label": "Subcontractor Management",

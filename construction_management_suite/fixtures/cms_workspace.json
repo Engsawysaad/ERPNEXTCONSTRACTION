@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Construction Management Suite",
     "title": "Construction Management Suite",
     "label": "Construction Management Suite",

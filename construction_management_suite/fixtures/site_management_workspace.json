@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Site Management",
     "title": "Site Management",
     "label": "Site Management",

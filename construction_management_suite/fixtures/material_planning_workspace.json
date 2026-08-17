@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Workspace",
+    "type": "Workspace",
     "name": "Material Planning",
     "title": "Material Planning",
     "label": "Material Planning",
