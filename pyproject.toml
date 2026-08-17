@@ -9,10 +9,7 @@ description = "Production-ready Construction Management Suite for ERPNext/Frappe
 authors = [{ name = "Your Company", email = "admin@construction.com" }]
 license = { text = "MIT" }
 requires-python = ">=3.11"
-dependencies = [
-    "frappe",
-    "erpnext",
-]
+dependencies = []
 
 [tool.setuptools.packages.find]
 include = ["construction_management_suite*"]
