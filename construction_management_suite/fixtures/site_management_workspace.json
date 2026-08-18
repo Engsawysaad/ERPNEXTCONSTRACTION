@@ -6,9 +6,15 @@
     "title": "Site Management",
     "label": "Site Management",
     "module": "Site Management",
+    "app": "construction_management_suite",
     "icon": "octicon octicon-tools",
-    "is_standard": 1,
+    "standard": 1,
     "public": 1,
+    "sequence_id": 5.0,
+    "for_user": "",
+    "parent_page": "",
+    "is_hidden": 0,
+    "indicator_color": "orange",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Field Operations & Daily Reports\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Daily Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Material Requests\",\"col\":4}}]",
     "links": [
       {"type": "Card Break", "label": "Daily Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
@@ -18,7 +24,6 @@
       {"type": "Link", "label": "Site Report Equipment", "link_to": "Site Report Equipment", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
       {"type": "Link", "label": "Site Report Material", "link_to": "Site Report Material", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
       {"type": "Link", "label": "Site Report Activity", "link_to": "Site Report Activity", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-
       {"type": "Card Break", "label": "Material Requests", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
       {"type": "Link", "label": "Site Material Request", "link_to": "Site Material Request", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
       {"type": "Link", "label": "Site Material Request Item", "link_to": "Site Material Request Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}

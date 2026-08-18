@@ -6,19 +6,23 @@
     "title": "Progress Billing",
     "label": "Progress Billing",
     "module": "Progress Billing",
+    "app": "construction_management_suite",
     "icon": "octicon octicon-file-text",
-    "is_standard": 1,
+    "standard": 1,
     "public": 1,
-    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Client Billing & Retention\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Payment Certificates\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Retention\",\"col\":4}}]",
+    "sequence_id": 6.0,
+    "for_user": "",
+    "parent_page": "",
+    "is_hidden": 0,
+    "indicator_color": "purple",
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Client Billing & Retention\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Payment Certificates\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Retention\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
     "links": [
       {"type": "Card Break", "label": "Payment Certificates", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
       {"type": "Link", "label": "Interim Payment Certificate", "link_to": "Interim Payment Certificate", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
       {"type": "Link", "label": "IPC Item", "link_to": "IPC Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
       {"type": "Link", "label": "Running Bill", "link_to": "Running Bill", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-
       {"type": "Card Break", "label": "Retention", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
       {"type": "Link", "label": "Retention Release", "link_to": "Retention Release", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
-
       {"type": "Card Break", "label": "Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
       {"type": "Link", "label": "Billing Summary", "link_to": "Billing Summary", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
     ]
