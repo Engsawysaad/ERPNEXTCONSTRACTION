@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 3.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "blue",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Estimation & Rate Analysis\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Analysis\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Estimations\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",

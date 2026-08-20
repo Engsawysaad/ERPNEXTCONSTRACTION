@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 5.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "orange",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Field Operations & Daily Reports\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Daily Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Material Requests\",\"col\":4}}]",

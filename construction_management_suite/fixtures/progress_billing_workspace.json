@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 6.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "purple",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Client Billing & Retention\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Payment Certificates\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Retention\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",

@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 7.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "cyan",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Subcontracts & Work Orders\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Subcontracts\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Work Orders & Payments\",\"col\":4}}]",

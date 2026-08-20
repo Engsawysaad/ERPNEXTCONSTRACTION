@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 4.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "red",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Project Costing & Budget\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Budgeting\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Cost Tracking\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",

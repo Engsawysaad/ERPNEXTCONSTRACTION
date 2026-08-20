@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 8.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "yellow",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Procurement & Site Transfers\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Forecasting\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Transfers & Consumption\",\"col\":4}}]",

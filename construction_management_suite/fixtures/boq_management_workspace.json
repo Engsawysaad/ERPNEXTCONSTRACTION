@@ -12,7 +12,7 @@
     "public": 1,
     "sequence_id": 2.0,
     "for_user": "",
-    "parent_page": "",
+    "parent_page": "Construction Management Suite",
     "is_hidden": 0,
     "indicator_color": "green",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"BOQ Management\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"BOQ Documents\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Templates\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
