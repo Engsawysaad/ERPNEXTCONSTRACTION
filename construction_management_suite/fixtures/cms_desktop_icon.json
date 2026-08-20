@@ -1,0 +1,19 @@
+[
+  {
+    "doctype": "Desktop Icon",
+    "name": "Construction Management Suite",
+    "label": "Construction Management Suite",
+    "icon_type": "App",
+    "link_type": "External",
+    "link": "/desk/construction_management_suite",
+    "sidebar": "Construction Management Suite",
+    "logo_url": "/assets/construction_management_suite/images/cms_logo.png",
+    "icon": "building",
+    "standard": 1,
+    "app": "construction_management_suite",
+    "idx": 1,
+    "hidden": 0,
+    "restrict_removal": 0,
+    "bg_color": "gray"
+  }
+]

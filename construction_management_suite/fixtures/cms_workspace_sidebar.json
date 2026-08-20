@@ -1,0 +1,104 @@
+[
+  {
+    "doctype": "Workspace Sidebar",
+    "name": "Construction Management Suite",
+    "title": "Construction Management Suite",
+    "header_icon": "building",
+    "app": "construction_management_suite",
+    "module": "BOQ Management",
+    "standard": 1,
+    "for_user": "",
+    "items": [
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Section Break",
+        "label": "Construction Management Suite",
+        "icon": "building",
+        "collapsible": 0,
+        "indent": 0,
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Overview",
+        "link_type": "Workspace",
+        "link_to": "Construction Management Suite",
+        "icon": "building",
+        "child": 0,
+        "default_workspace": 1
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "BOQ Management",
+        "link_type": "Workspace",
+        "link_to": "BOQ Management",
+        "icon": "octicon octicon-list-ordered",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Estimation",
+        "link_type": "Workspace",
+        "link_to": "Estimation",
+        "icon": "octicon octicon-graph",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Project Costing",
+        "link_type": "Workspace",
+        "link_to": "Project Costing",
+        "icon": "octicon octicon-dashboard",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Site Management",
+        "link_type": "Workspace",
+        "link_to": "Site Management",
+        "icon": "octicon octicon-tools",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Progress Billing",
+        "link_type": "Workspace",
+        "link_to": "Progress Billing",
+        "icon": "octicon octicon-file-text",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Subcontractor Management",
+        "link_type": "Workspace",
+        "link_to": "Subcontractor Management",
+        "icon": "octicon octicon-organization",
+        "child": 0,
+        "default_workspace": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Material Planning",
+        "link_type": "Workspace",
+        "link_to": "Material Planning",
+        "icon": "octicon octicon-package",
+        "child": 0,
+        "default_workspace": 0
+      }
+    ]
+  }
+]

@@ -40,6 +40,8 @@ fixtures = [
         "Subcontractor Management",
         "Material Planning",
     ]]]},
+    {"dt": "Workspace Sidebar", "filters": [["app", "=", "construction_management_suite"]]},
+    {"dt": "Desktop Icon", "filters": [["app", "=", "construction_management_suite"]]},
 ]
 
 # Document Events
