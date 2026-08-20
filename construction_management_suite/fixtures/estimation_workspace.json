@@ -17,14 +17,179 @@
     "indicator_color": "blue",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Estimation & Rate Analysis\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Analysis\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Estimations\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
     "links": [
-      {"type": "Card Break", "label": "Analysis", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Rate Analysis", "link_to": "Rate Analysis", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Link", "label": "Rate Analysis Item", "link_to": "Rate Analysis Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Card Break", "label": "Estimations", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Cost Estimation", "link_to": "Cost Estimation", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Link", "label": "Cost Estimation Item", "link_to": "Cost Estimation Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Card Break", "label": "Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Rate Comparison", "link_to": "Rate Comparison", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+      {
+        "type": "Card Break",
+        "label": "Analysis",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Rate Analysis",
+        "link_to": "Rate Analysis",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 1,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Link",
+        "label": "Rate Analysis Item",
+        "link_to": "Rate Analysis Item",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Card Break",
+        "label": "Estimations",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Cost Estimation",
+        "link_to": "Cost Estimation",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 1,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Link",
+        "label": "Cost Estimation Item",
+        "link_to": "Cost Estimation Item",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Card Break",
+        "label": "Reports",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Rate Comparison",
+        "link_to": "Rate Comparison",
+        "link_type": "Report",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      }
+    ],
+    "sidebar_items": [
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Section Break",
+        "label": "Construction Management Suite",
+        "icon": "building",
+        "collapsible": 0,
+        "indent": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Construction Management Suite",
+        "link_type": "Workspace",
+        "link_to": "Construction Management Suite",
+        "icon": "building",
+        "default_workspace": 1,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "BOQ Management",
+        "link_type": "Workspace",
+        "link_to": "BOQ Management",
+        "icon": "octicon octicon-list-ordered",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Estimation",
+        "link_type": "Workspace",
+        "link_to": "Estimation",
+        "icon": "octicon octicon-graph",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Project Costing",
+        "link_type": "Workspace",
+        "link_to": "Project Costing",
+        "icon": "octicon octicon-dashboard",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Site Management",
+        "link_type": "Workspace",
+        "link_to": "Site Management",
+        "icon": "octicon octicon-tools",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Progress Billing",
+        "link_type": "Workspace",
+        "link_to": "Progress Billing",
+        "icon": "octicon octicon-file-text",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Subcontractor Management",
+        "link_type": "Workspace",
+        "link_to": "Subcontractor Management",
+        "icon": "octicon octicon-organization",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Material Planning",
+        "link_type": "Workspace",
+        "link_to": "Material Planning",
+        "icon": "octicon octicon-package",
+        "default_workspace": 0,
+        "child": 0
+      }
     ]
   }
 ]

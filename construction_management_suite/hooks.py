@@ -134,6 +134,17 @@ after_install = "construction_management_suite.setup.after_install"
 after_migrate = "construction_management_suite.setup.after_migrate"
 before_uninstall = "construction_management_suite.setup.before_uninstall"
 
+# v16 Desktop app icon — makes the app appear on the Desk home screen
+# and triggers auto-generation of sidebar + desktop icon records.
+add_to_apps_screen = [
+    {
+        "name": "construction_management_suite",
+        "logo": "/assets/construction_management_suite/images/cms_logo.png",
+        "title": "Construction Management Suite",
+        "route": "/desk/construction_management_suite",
+    }
+]
+
 # Portal menu items
 portal_menu_items = []
 

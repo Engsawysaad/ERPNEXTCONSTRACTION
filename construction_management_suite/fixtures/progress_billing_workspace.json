@@ -17,14 +17,179 @@
     "indicator_color": "purple",
     "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Client Billing & Retention\"}},{\"type\":\"card\",\"data\":{\"card_name\":\"Payment Certificates\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Retention\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
     "links": [
-      {"type": "Card Break", "label": "Payment Certificates", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Interim Payment Certificate", "link_to": "Interim Payment Certificate", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Link", "label": "IPC Item", "link_to": "IPC Item", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Link", "label": "Running Bill", "link_to": "Running Bill", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Card Break", "label": "Retention", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Retention Release", "link_to": "Retention Release", "link_type": "DocType", "doctype": "Workspace Link", "onboard": 1, "hidden": 0, "is_query_report": 0, "link_count": 0},
-      {"type": "Card Break", "label": "Reports", "doctype": "Workspace Card Break", "hidden": 0, "is_query_report": 0, "link_count": 0, "onboard": 0},
-      {"type": "Link", "label": "Billing Summary", "link_to": "Billing Summary", "link_type": "Report", "doctype": "Workspace Link", "onboard": 0, "hidden": 0, "is_query_report": 0, "link_count": 0}
+      {
+        "type": "Card Break",
+        "label": "Payment Certificates",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Interim Payment Certificate",
+        "link_to": "Interim Payment Certificate",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 1,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Link",
+        "label": "IPC Item",
+        "link_to": "IPC Item",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Link",
+        "label": "Running Bill",
+        "link_to": "Running Bill",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Card Break",
+        "label": "Retention",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Retention Release",
+        "link_to": "Retention Release",
+        "link_type": "DocType",
+        "doctype": "Workspace Link",
+        "onboard": 1,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      },
+      {
+        "type": "Card Break",
+        "label": "Reports",
+        "doctype": "Workspace Card Break",
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0,
+        "onboard": 0
+      },
+      {
+        "type": "Link",
+        "label": "Billing Summary",
+        "link_to": "Billing Summary",
+        "link_type": "Report",
+        "doctype": "Workspace Link",
+        "onboard": 0,
+        "hidden": 0,
+        "is_query_report": 0,
+        "link_count": 0
+      }
+    ],
+    "sidebar_items": [
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Section Break",
+        "label": "Construction Management Suite",
+        "icon": "building",
+        "collapsible": 0,
+        "indent": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Construction Management Suite",
+        "link_type": "Workspace",
+        "link_to": "Construction Management Suite",
+        "icon": "building",
+        "default_workspace": 1,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "BOQ Management",
+        "link_type": "Workspace",
+        "link_to": "BOQ Management",
+        "icon": "octicon octicon-list-ordered",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Estimation",
+        "link_type": "Workspace",
+        "link_to": "Estimation",
+        "icon": "octicon octicon-graph",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Project Costing",
+        "link_type": "Workspace",
+        "link_to": "Project Costing",
+        "icon": "octicon octicon-dashboard",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Site Management",
+        "link_type": "Workspace",
+        "link_to": "Site Management",
+        "icon": "octicon octicon-tools",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Progress Billing",
+        "link_type": "Workspace",
+        "link_to": "Progress Billing",
+        "icon": "octicon octicon-file-text",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Subcontractor Management",
+        "link_type": "Workspace",
+        "link_to": "Subcontractor Management",
+        "icon": "octicon octicon-organization",
+        "default_workspace": 0,
+        "child": 0
+      },
+      {
+        "doctype": "Workspace Sidebar Item",
+        "type": "Link",
+        "label": "Material Planning",
+        "link_type": "Workspace",
+        "link_to": "Material Planning",
+        "icon": "octicon octicon-package",
+        "default_workspace": 0,
+        "child": 0
+      }
     ]
   }
 ]
